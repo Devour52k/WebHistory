@@ -8,24 +8,26 @@
 	<meta name="Distribution" content="Global" />
 	<meta name="Owner|Admin" content="Devour - devour@techie.com" />
 	<meta name="Robots" content="index,follow" />
-	<link rel="stylesheet" href="images/Azulmedia.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>DevTEK | Tech Referral Site</title>
+	<link rel="stylesheet" href="css/Azulmedia.css" type="text/css" />
+	<link rel="stylesheet" href="css/custom.css" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
-
-
 <body>
 	<!-- wrap starts here -->
 	<div id="wrap">
 		<div id="header">
 			<h1 id="logo">Dev<span class="gray">TEK</span></h1>
 			<h2 id="slogan">Vast Amounts of Information</h2>
-			<!-- Menu Tabs -->
-			<div id="menu">
+			<!-- Menu Tabs Add icon library -->
+			<div id="menu" class="icon-bar">
 				<ul>
-					<li id="current"><a href="index.html">Home</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="WindowsRef.html">Other Sites</a></li>
+					<li><a class="active" href="#"><i class="fa fa-home"></i></a></li>
+					<li><a href="#"><i class="fa fa-search"></i></a></li>
+					<li><a href="#"><i class="fa fa-envelope"></i></a></li>
+					<li><a href="#"><i class="fa fa-globe"></i></a></li>
+					<li><a href="#"><i class="fa fa-trash"></i></a></li>
 				</ul>
 			</div>
 		</div>
@@ -96,7 +98,9 @@
 			<!-- Main Content -->
 			<div id="main"> <a name="Main"></a>
 				<div class="box">
-					<h1>Main <span class="gray">Page</span></h1>
+					<div>
+						<h1>Main <span class="gray">Page</span></h1>
+					</div>
 					<hr>
 					<p>
 						<strong>Site Details</strong>
@@ -111,7 +115,7 @@
 						<strong>Note:</strong> Call/email ahead and reserve a spot, The waiting time for the free screen replacement could be up to a month depending on more pressing matters. we can notify you when a spot is available so you can hold onto your device until the IT guys open the case file.
 					</p>
 					<p class="comments align-right"> <a href="index.html">Read
-more</a> : <a href="index.html">Comments(7)</a> : </p>
+more</a> : <a href="index.html">Comments(0)</a> : </p>
 					<!-- End Main Content -->
 				</div>
 			</div>
@@ -151,7 +155,7 @@ more</a> : <a href="index.html">Comments(7)</a> : </p>
 				<div class="box">
 					<h2>RUST <span style="color:darkorange">Configuration Files</span></h2>
 					<hr />
-					<div id="myDIV">
+					<div id="myDIV" >
 						<p>
 							<pre>
 		audio.advancedocclusion "False"
@@ -160,7 +164,7 @@ more</a> : <a href="index.html">Comments(7)</a> : </p>
 		audio.musicvolume "0"
 		audio.musicvolumemenu "0.42"
 		audio.speakers "2"
-		audio.v	oices "0.23"
+		audio.voices "0.23"
 		client.cambone ""
 		client.camdist "2"
 		client.camfov "90"
@@ -184,7 +188,7 @@ more</a> : <a href="index.html">Comments(7)</a> : </p>
 		effects.motionblur "False"
 		effects.otherplayerslightflares "False"
 		effects.shafts "False"
-        effects.sharpen "False"
+    effects.sharpen "False"
 		effects.showoutlines "True"
 		effects.vignet "False"
 		fps.limit "-1"
@@ -256,23 +260,20 @@ more</a> : <a href="index.html">Comments(7)</a> : </p>
 				<div class="box">
 					<h3><strong>RUST</strong> Prevent Keybinds From Reseting.</h3>
 					<hr />
-					<div id="myDIV">
-
-
+					<div id="myDIV" style="font-size: 12px;">
 						<h5>Game Directory/Path:</h5>
 						C:\Program Files (x86)\Steam\steamapps\common\Rust\cfg
-						<i>Leave this folder open for later use</i>
+						<em>Leave this folder open for later use</em>
 						<p>
 							<ol>
 								<li>Right click "key.cfg" and go to properties. Once the properties are opened select the "read only" check box.
-									<li>Right click "key.cfg" select choose default program.
-										<li>Deselct "always use this program to open this file type" and select word pad.
-											<li>(Please Note: You MUST un-check this everytime you want to add or remove anything, the game will crash otherwise.)
-												<li>Once "key.cfg" is open navigate to the bottom and place the commands you want to add.
-													<li>When you have all the binds you want entered, click file at the top left and click save.
-														<li>Close out of wordpad, Navigate back to C:\Program Files (x86)\Steam\steamapps\common\Rust\cfg
-															<li>Right click "key.cfg" and go to properties. Once the properties are opened select the "read only" check box.
-																<li>Right click "key.cfg" and go to properties. Once the properties are opened select the "read only" check box. Click apply, then ok.
+								<li>Right click "key.cfg" select choose default program.
+								<li>Deselct "always use this program to open this file type" and select word pad.
+								<li>(Please Note: You MUST un-check this everytime you want to add or remove anything, the game will crash otherwise.)
+								<li>Once "key.cfg" is open navigate to the bottom and place the commands you want to add.
+								<li>When you have all the binds you want entered, click file at the top left and click save.
+								<li>Close out of wordpad, Navigate back to C:\Program Files (x86)\Steam\steamapps\common\Rust\cfg
+								<li>Right click "key.cfg" and go to properties. Once the properties are opened select the "read only" check box.
 							</ol>
 						</p>
 						<p>
@@ -343,16 +344,16 @@ bind p chat.say "/sethome 2"\
 -720p - Run tenfoot in 720p rather than 1080p
 -accountrecovery - Perform account recovery
 -all_languages - show longest loc string from any language
--auto-browser-auth - 
+-auto-browser-auth -
 -bigpicture - Start in Steam Big Picture mode
 -cafeapplaunch - Launch apps in a cyber cafe context
 -candidates - Show libjingle candidates for local connection as they are processed
 -ccsyntax - Spew details about the localized strings we load
 -cef-winxp - force running the WinXP compatible CEF browser
--clientui - 
+-clientui -
 -community - Set the community URL
 -complete_install_via_http - Run installation completion over HTTP by default
--console - 
+-console -
 -cybercafe - Forces cyber cafe mode for debugging
 -debug_steamapi - enables logging of Steam API functions
 -debugbutton - Show debug button in content frame header
@@ -360,11 +361,11 @@ bind p chat.say "/sethome 2"\
 -disable-winh264 - disables loading winh264.dll
 -disablehighdpi - disables high-DPI support in CEF
 -dumpvideostream - Dump the game stream as an elementary video file
--enablealloobesteps - 
--flushconfig - 
+-enablealloobesteps -
+-flushconfig -
 -forcecontrollerappid - Force a Specific AppID for Steam Controller Config - Prevents context/app switching from changing configuration
 -forceservice - Run Steam Client Service even if Steam has admin rights
--friendsui - 
+-friendsui -
 -fs_log - Log file system accesses
 -fs_logbins - Log the binaries we load during operation
 -fs_target - Set target syntax
@@ -381,8 +382,8 @@ bind p chat.say "/sethome 2"\
 -no-dwrite - forces CEF to use GDI text even if DWrite support is available
 -no-shared-textures - forces overlay to avoid sharing texture handles with game process
 -nobigpicture - Start in regular mode (force Big Picture mode off)
--noconsole - 
--nocrashmonitor - 
+-noconsole -
+-nocrashmonitor -
 -nointro - Skip intro movie
 -noshaders - Disable the shader manager
 -opendevtools - Open Chrome devtools on launch
@@ -392,10 +393,10 @@ bind p chat.say "/sethome 2"\
 -silent - Silent startup mode (tray mode only)
 -single_core - Force Steam to run on your primary CPU only
 -skipstreamingdrivers - Skip streaming driver checks
--steamos - 
+-steamos -
 -store - Set the store URL
 -storebeta - 0
--supernav - 
+-supernav -
 -tcp - forces connection to Steam backend to be via TCP - deprecated, will be replaced by websockets only for TCP soon
 -tenfoot - Start in Steam Big Picture mode
 -testbutton - Show test button on main menu
@@ -410,263 +411,263 @@ bind p chat.say "/sethome 2"\
 -websocket - forces connection to Steam backend to be via WebSocket
 -websocketignorecertissues - says it's ok to ignore cert validation issues if using WebSocket connections, for dev use only
 -windowed - Run Steam tenfoot mode in a window rather than a fullscreen borderless window
-@AllowSkipGameUpdate = "0" - 
-@AppMRUSize = "20" - 
-@bCloudDetailsEnabled = "0" - 
-@bContentManifestUseProtobufs = "1" - 
-@bCSClientRateLimitUseDelays = "0" - 
-@bCSForceNoCache = "0" - 
-@bDepotBuilderReadBufferSizeKB = "8192" - 
-@bDepotBuilderUnbufferedReads = "1" - 
+@AllowSkipGameUpdate = "0" -
+@AppMRUSize = "20" -
+@bCloudDetailsEnabled = "0" -
+@bContentManifestUseProtobufs = "1" -
+@bCSClientRateLimitUseDelays = "0" -
+@bCSForceNoCache = "0" -
+@bDepotBuilderReadBufferSizeKB = "8192" -
+@bDepotBuilderUnbufferedReads = "1" -
 @bEnableFrameFuncOverageWarnings = "0" - This turns on the spew in SPEW_MISC at level 4, still need to adjust spew levels to see it.
-@bEnableMovieRecording = "0" - 
+@bEnableMovieRecording = "0" -
 @bEnableOfflineLogonTicket = "1" - If true, an offline logon ticket will be requested during logon if none is cached
-@bEnableSiteLicenseConnect = "1" - 
-@bEnableSiteLicenseConsoleLogging = "0" - 
-@bEnableSpewThrottle = "1" - 
-@bForceLaunchEula = "0" - 
-@bForceStreamUnsupportedApp = "0" - 
-@bLANPeerConnectionTimeoutSec = "5" - 
-@bMsgErrorDump = "0" - 
-@bNewGameHelpSiteEnabled = "1" - 
+@bEnableSiteLicenseConnect = "1" -
+@bEnableSiteLicenseConsoleLogging = "0" -
+@bEnableSpewThrottle = "1" -
+@bForceLaunchEula = "0" -
+@bForceStreamUnsupportedApp = "0" -
+@bLANPeerConnectionTimeoutSec = "5" -
+@bMsgErrorDump = "0" -
+@bNewGameHelpSiteEnabled = "1" -
 @bRequireOfflineLogonTicket = "1" - If true, a valid offline logon ticket is required when logging in in offline or no connection mode
 @cbPartnerUploadChunkSize = "1000000" - Chunk size to use for POSTing partner uploads
-@cCSClientMaxNumSocketsPerHost = "8" - 
-@cDepotBuilderFileChunkingThreads = "4" - 
-@cMaxContentServersToRequest = "20" - 
-@cMaxInitialDownloadSources = "-1" - 
-@cNetEncryptionHandshakeWorkMax_HighPri = "8000" - 
-@cNetEncryptionHandshakeWorkMax_LowPri = "2000" - 
-@cNetEncryptionHandshakeWorkMax_MedPri = "4000" - 
-@csecCSRequestProcessorTimeOut = "300" - 
+@cCSClientMaxNumSocketsPerHost = "8" -
+@cDepotBuilderFileChunkingThreads = "4" -
+@cMaxContentServersToRequest = "20" -
+@cMaxInitialDownloadSources = "-1" -
+@cNetEncryptionHandshakeWorkMax_HighPri = "8000" -
+@cNetEncryptionHandshakeWorkMax_LowPri = "2000" -
+@cNetEncryptionHandshakeWorkMax_MedPri = "4000" -
+@csecCSRequestProcessorTimeOut = "300" -
 @csecFavoriteGameAccountCacheTime = "86400" - Control how often we refresh the account IDs in the game server favorites list
-@csecIncomingDataRatePeriod = "1" - 
+@csecIncomingDataRatePeriod = "1" -
 @csecSiteLicenseProxyStatsLog = "60" - Log proxy stats this often
-@csecUpdateTargetNumConnectionsEpoch = "10" - 
-@cSecUploadDownloadRates = "300" - 
-@CSInterfaceProxyPassword = "" - 
-@CSInterfaceProxyUsername = "" - 
-@cUDPSendRetries = "8" - 
-@CustomBinaryRequestRetryTimes = "20" - 
-@DepotBuilderMaxParallelUploadChunks = "24" - 
-@DepotBuilderNumHTTPSocketsToMDS = "12" - 
-@DepotBuilderParallelUploadChunks = "6" - 
-@DepotBuilderProgressTimeout = "1000" - 
-@EnableUDPHistory = "0" - 
-@fDownloadRateImprovementToAddAnotherConnection = "1.2" - 
-@fMinDataRateToAttemptTwoConnectionsMbps = "1.5" - 
-@ForceContentServerID = "" - 
-@GCNameOverride = "" - 
-@LocalContentServer = "" - 
-@MaxOutstandingSendThreadItem = "1000" - 
-@nCloudDetailsSimulatedFileCount = "0" - 
-@nCSClientRateLimitKbps = "0" - 
-@nDownloadLANChunkCacheSizeMB = "128" - 
-@nDownloadLANPeerGroup = "0" - 
-@net_backlog_bytes_allowed = "12000000" - 
-@net_backlog_time_allowed_sec = "5" - 
-@net_loopback = "1" - 
+@csecUpdateTargetNumConnectionsEpoch = "10" -
+@cSecUploadDownloadRates = "300" -
+@CSInterfaceProxyPassword = "" -
+@CSInterfaceProxyUsername = "" -
+@cUDPSendRetries = "8" -
+@CustomBinaryRequestRetryTimes = "20" -
+@DepotBuilderMaxParallelUploadChunks = "24" -
+@DepotBuilderNumHTTPSocketsToMDS = "12" -
+@DepotBuilderParallelUploadChunks = "6" -
+@DepotBuilderProgressTimeout = "1000" -
+@EnableUDPHistory = "0" -
+@fDownloadRateImprovementToAddAnotherConnection = "1.2" -
+@fMinDataRateToAttemptTwoConnectionsMbps = "1.5" -
+@ForceContentServerID = "" -
+@GCNameOverride = "" -
+@LocalContentServer = "" -
+@MaxOutstandingSendThreadItem = "1000" -
+@nCloudDetailsSimulatedFileCount = "0" -
+@nCSClientRateLimitKbps = "0" -
+@nDownloadLANChunkCacheSizeMB = "128" -
+@nDownloadLANPeerGroup = "0" -
+@net_backlog_bytes_allowed = "12000000" -
+@net_backlog_time_allowed_sec = "5" -
+@net_loopback = "1" -
 @NetConnectionBufferMsgLimit = "1000" - Max # of message that will be buffered into a single zipped packet
-@NetConnectionBufferThreaded = "1" - 
-@nIOCPThreadCount = "1" - 
-@nLANPeerRateLimitKbps = "0" - 
-@nNetConnectionBufferZipLevel = "1" - 
+@NetConnectionBufferThreaded = "1" -
+@nIOCPThreadCount = "1" -
+@nLANPeerRateLimitKbps = "0" -
+@nNetConnectionBufferZipLevel = "1" -
 @nParentalSettingsLogLevel = "4" - Control the amount of spew written to the parental log file
 @nSiteLicenseProxyCacheMaxGB = "100" - If local content cache is enabled, use up to this much disk space
 @nSiteLicenseProxyEnableP2P = "0" - If set, will have all connected clients join the same P2P download group
 @nSiteLicenseProxyPort = "0" - Local content cache: set > 0 to enable, will listen on this port
-@nSpewThrottleNagFrequencyMs = "5000" - 
-@nSpewThrottleResumeThreshold = "3" - 
-@nSpewThrottleTriggerThreshold = "10" - 
-@nSpewThrottleUnconditionalResumeMs = "5000" - 
-@nSpewThrottleUnconditionalTriggerCount = "50" - 
-@nStatsMonitorScale = "1" - 
-@nStatsMonitorSecs = "300" - 
-@nTCPLargeSendBufSizeMB = "16" - 
-@panorama_backstack_focus_restore = "1" - 
+@nSpewThrottleNagFrequencyMs = "5000" -
+@nSpewThrottleResumeThreshold = "3" -
+@nSpewThrottleTriggerThreshold = "10" -
+@nSpewThrottleUnconditionalResumeMs = "5000" -
+@nSpewThrottleUnconditionalTriggerCount = "50" -
+@nStatsMonitorScale = "1" -
+@nStatsMonitorSecs = "300" -
+@nTCPLargeSendBufSizeMB = "16" -
+@panorama_backstack_focus_restore = "1" -
 @panorama_daisy_wheel = "ABXY" - Daisy wheel input mode: RS | ABXY
-@panorama_debug_movies = "0" - 
-@panorama_defaultinput = "dualtouch" - 
+@panorama_debug_movies = "0" -
+@panorama_defaultinput = "dualtouch" -
 @panorama_dragscroll_maxflickvelocity = "8000" - Maximum velocity for a drag scroll flick
 @panorama_dragscroll_maxflickvelocity_vr = "8000" - Maximum velocity for a drag scroll flick in VR
 @panorama_dragscroll_minflickvelocity = "60" - Minimum velocity that the mouse must be moving as mouse up time to qualify as a drag scroll flick
 @panorama_dragscroll_minflickvelocity_vr = "240" - Minimum velocity that the mouse must be moving as mouse up time to qualify as a drag scroll flick in VR
-@panorama_html_shared_surface = "1" - 
-@panorama_mainmenu_web = "0" - 
+@panorama_html_shared_surface = "1" -
+@panorama_mainmenu_web = "0" -
 @panorama_suggestions_view = "0" - 0 - default, 1 - no games or friends, 2 - just games no friends, 3 - some games and friends, 4 - some  friends no games
-@panorama_suggestions_web = "1" - 
-@panorama_trailerslideshow = "1" - 
-@panorama_transform_parents_no_layer_if_no_perspective = "0" - 
-@RunAdminInstallScriptsFromService = "0" - 
-@sBroadcastPreset = "" - 
-@sBroadcastTune = "film" - 
-@sCSDSVirtualHostHeader = "" - 
+@panorama_suggestions_web = "1" -
+@panorama_trailerslideshow = "1" -
+@panorama_transform_parents_no_layer_if_no_perspective = "0" -
+@RunAdminInstallScriptsFromService = "0" -
+@sBroadcastPreset = "" -
+@sBroadcastTune = "film" -
+@sCSDSVirtualHostHeader = "" -
 @sSiteLicenseProxyCacheDirectory = "appcache/slscache" - If local content cache is enabled, use this path for disk cache
 @sSteamCmdForcePlatformBitness = "" - Must be one of: [32 | 64]
 @sSteamCmdForcePlatformType = "" - Must be one of: [windows | macos | linux]
-@steam_alienfx_settings = "0" - 
-@steam_alienware_hdmi_input = "0" - 
-@steam_controller_settings = "0" - 
+@steam_alienfx_settings = "0" -
+@steam_alienware_hdmi_input = "0" -
+@steam_controller_settings = "0" -
 @sticky_tooltips = "0" - Don't ever hide tooltips. Helpful when debugging complicated tooltip layouts.
-@store_beta_mode = "0" - 
-@store_country_code = "" - 
-@strCSNoCacheHeader = "no-cache" - 
-@StreamClientArgs = "" - 
+@store_beta_mode = "0" -
+@store_country_code = "" -
+@strCSNoCacheHeader = "no-cache" -
+@StreamClientArgs = "" -
 @uDownloadLANPeerPort = "27038" - If LAN p2p download enabled, will listen on this port for TCP connections from peers. Must be set consistently across all members of the group!
 @uRemoteDiscoveryPortOverride = "0" - If non-zero, will listen on this port for broadcasts instead of k_nBroadcastPort
 @uRemoteDiscoveryPortTransmit = "0" - If non-zero, will transmit outgoing broadcasts on this port instead of on the listen port
-AlwaysCustomizeOnBadExit = "0" - 
-app_backup - <appId> <max size MB> <target folder>
-app_dlc_status - app_status <appId> <dlcId>
-app_download_enable - <0|1>
-app_info_http_min = "0" - 
-app_info_http_num_sockets = "8" - 
+AlwaysCustomizeOnBadExit = "0" -
+app_backup - appId> max size MB> target folder>
+app_dlc_status - app_status appId> dlcId>
+app_download_enable - 0|1>
+app_info_http_min = "0" -
+app_info_http_num_sockets = "8" -
 app_info_print - Dumps app info for appID
 app_info_update - [0|1] : trigger app info update, optionally for update all
-app_install - <appId> [volumeindex] 
-app_license_request - <AppID> - Requests a free licenses for this app if not already owned.
-app_mark_validation - <appId> <0|1:full>
-app_move - <appId> <volumeindex>
-app_restore - <appId> <backup folder>
-app_set_update_flag - app_set_update_flag <appId>
-app_shader_manifest - app_shader_manifest <appId> <manifestid>
-app_start_validation - <appId>
-app_status - app_status <appId>
-app_stop - <appid> [force:0|1] stop this running app
-app_uninstall - [-complete] <appId>
-app_update_cancel - <EAppUpdateError>
-apps_installed - 
-apps_running - displays information about running games tracked by Steam 
+app_install - appId> [volumeindex]
+app_license_request - AppID> - Requests a free licenses for this app if not already owned.
+app_mark_validation - appId> 0|1:full>
+app_move - appId> volumeindex>
+app_restore - appId> backup folder>
+app_set_update_flag - app_set_update_flag appId>
+app_shader_manifest - app_shader_manifest appId> manifestid>
+app_start_validation - appId>
+app_status - app_status appId>
+app_stop - appid> [force:0|1] stop this running app
+app_uninstall - [-complete] appId>
+app_update_cancel - EAppUpdateError>
+apps_installed -
+apps_running - displays information about running games tracked by Steam
 async_disconnect - async disconnect
-AsyncFileIOAlternateReadWrite = "1" - 
-AsyncFileIODisableWrite = "0" - 
-AsyncFileIOExpectOutstandingIO = "6" - 
-AsyncFileIOForceGenericIO = "0" - 
-AsyncFileIOMaxPendingWin32 = "64" - 
-AsyncFileIOReadHandleCache = "4" - 
-AsyncFileIOWriteHandleCache = "4" - 
-batterypercent = "0" - 
-batterytime = "0" - 
-bBroadcastAlwaysUploadThumbnails = "0" - 
-bCheckForFreeGamesOnLogin = "0" - 
-bCheckUGCIntegrity = "1" - 
-bClientRecommendationsEnabled = "1" - 
-bDisableClientUIOverlay = "1" - 
-bDisableTenFootOverlay = "0" - 
-bEnableHomeTestOverlay = "0" - 
+AsyncFileIOAlternateReadWrite = "1" -
+AsyncFileIODisableWrite = "0" -
+AsyncFileIOExpectOutstandingIO = "6" -
+AsyncFileIOForceGenericIO = "0" -
+AsyncFileIOMaxPendingWin32 = "64" -
+AsyncFileIOReadHandleCache = "4" -
+AsyncFileIOWriteHandleCache = "4" -
+batterypercent = "0" -
+batterytime = "0" -
+bBroadcastAlwaysUploadThumbnails = "0" -
+bCheckForFreeGamesOnLogin = "0" -
+bCheckUGCIntegrity = "1" -
+bClientRecommendationsEnabled = "1" -
+bDisableClientUIOverlay = "1" -
+bDisableTenFootOverlay = "0" -
+bEnableHomeTestOverlay = "0" -
 bEnableLoginUsersErrorUpload = "0" - Set to enable uploading log files if there is an error loading login user info
-bEnableSubscribedFileListCache = "1" - 
-bEnableTradeInviteBarInLaunchers = "1" - 
-betaalwaysrebuild = "0" - 
-bExternalProcessForVOD = "1" - 
-bFinishStagedDepotVersions = "1" - 
-bigpicturetips_enableinvisibletips = "0" - 
-bigpicturetips_enableseentips = "0" - 
-bLogLegacyDiskDetails = "0" - 
-bPhoneBannerEnabled = "0" - 
+bEnableSubscribedFileListCache = "1" -
+bEnableTradeInviteBarInLaunchers = "1" -
+betaalwaysrebuild = "0" -
+bExternalProcessForVOD = "1" -
+bFinishStagedDepotVersions = "1" -
+bigpicturetips_enableinvisibletips = "0" -
+bigpicturetips_enableseentips = "0" -
+bLogLegacyDiskDetails = "0" -
+bPhoneBannerEnabled = "0" -
 bPromptGameLaunchBypass = "0" - If set the user will not be prompted when running games with URL arguments (NOT recommended).
-bRedeemWalletVoucherEnabled = "1" - 
-broadcast_adjust_bitrate = "200" - 
-broadcast_upload_drop_sec = "6" - 
-broadcast_upload_update_sec = "3" - 
-bScreenshotsLibrary = "0" - 
+bRedeemWalletVoucherEnabled = "1" -
+broadcast_adjust_bitrate = "200" -
+broadcast_upload_drop_sec = "6" -
+broadcast_upload_update_sec = "3" -
+bScreenshotsLibrary = "0" -
 bShaderCacheDownloads = "1" - Allow to download shader cache depots
-bShaderEnableCacheManagement = "1" - 
-bShaderEnableUpload = "1" - 
-bShowHelpSiteChangeAccountWizard = "1" - 
-bSteam3LimitedUserEnable = "1" - 
-bSteamLoaderEnable = "1" - 
-bSubscribedFilesDecompressOnClient = "1" - 
-bSubscribedFilesPollForUpdates = "0" - 
-bSubscribedFilesUseRangeRequests = "0" - 
-build_installer - <project file> <target folder> [beta key] [beta pwd]
-bVerifyAllDownloads = "0" - 
-cAppUpdateWorkingSetMB = "128" - 
-cFileValidationMaxLog = "100" - 
+bShaderEnableCacheManagement = "1" -
+bShaderEnableUpload = "1" -
+bShowHelpSiteChangeAccountWizard = "1" -
+bSteam3LimitedUserEnable = "1" -
+bSteamLoaderEnable = "1" -
+bSubscribedFilesDecompressOnClient = "1" -
+bSubscribedFilesPollForUpdates = "0" -
+bSubscribedFilesUseRangeRequests = "0" -
+build_installer - project file> target folder> [beta key] [beta pwd]
+bVerifyAllDownloads = "0" -
+cAppUpdateWorkingSetMB = "128" -
+cFileValidationMaxLog = "100" -
 clear_console - Clears console text
 clear_marketing_message_views - Refetches & displays all marketing messages, ignoring the list of those already seen
-ClientStatsUploadRateSeconds = "10" - 
-clientui_overlay_fps = "60" - 
+ClientStatsUploadRateSeconds = "10" -
+clientui_overlay_fps = "60" -
 cm_force_change - Change CM List
 config_refresh - Refresh client configuration
-connect_remote - <ip:port>
-countrycode = "" - 
-cPreallocateMinimumSizeKB = "256" - 
-csecManifestDownloadTimeout = "120" - 
-debugLaunchAppDelaySecs = "0" - 
-DepotDownloadProgressTimeout = "120" - 
-DepotReconstructionBadChunk = "0" - 
-DepotReconstructionLowPrio = "1" - 
-DepotReconstructionNumIOThreads = "1" - 
-DepotUseAlternatingReadWrite = "1" - 
-developer = "0" - 
-device_authorize_local - <description> : authorize local device for authorized users
+connect_remote - ip:port>
+countrycode = "" -
+cPreallocateMinimumSizeKB = "256" -
+csecManifestDownloadTimeout = "120" -
+debugLaunchAppDelaySecs = "0" -
+DepotDownloadProgressTimeout = "120" -
+DepotReconstructionBadChunk = "0" -
+DepotReconstructionLowPrio = "1" -
+DepotReconstructionNumIOThreads = "1" -
+DepotUseAlternatingReadWrite = "1" -
+developer = "0" -
+device_authorize_local - description> : authorize local device for authorized users
 device_authorize_status - prints device authorization status
-disable_license - <packagid> Temporarily disables a license that was granted through the Steamworks site
-download_depot - download_depot <appid> <depotid> [<target manifestid>] [<delta manifestid>] [<depot flags filter>] : download a single depot
-download_item - download_item <appid> <PublishedFileId> : download a workshop item
+disable_license - packagid> Temporarily disables a license that was granted through the Steamworks site
+download_depot - download_depot appid> depotid> [target manifestid>] [delta manifestid>] [depot flags filter>] : download a single depot
+download_item - download_item appid> PublishedFileId> : download a workshop item
 download_sources - Dumps list of download sources
 dump_scheduled_functions - usage: "dump_scheduled_functions" Displays internal Steam function callback timers
-enable_license - <packagid> Enables a previously disabled license that was granted through the Steamworks site
-enforcerequiredbranch = "0" - 
+enable_license - packagid> Enables a previously disabled license that was granted through the Steamworks site
+enforcerequiredbranch = "0" -
 find - find substrings in console commands
-findbestcellstartupdelay = "600" - 
-get_download_throttle - 
+findbestcellstartupdelay = "600" -
+get_download_throttle -
 html_exit_fullscreen - If the web panel for the ui is currently fullscreen, undo that
-install_folder_add - <path>
+install_folder_add - path>
 install_folder_list - list all mounted Steam volumes
 install_folder_ui - show UI dialog
-installmanagertimeout = "15" - 
-join_steam_use_web = "0" - 
+installmanagertimeout = "15" -
+join_steam_use_web = "0" -
 kv_stats - Render KeyValues stats
-library_sharing_account_max = "5" - 
-licenses_for_app - <appid> : shows active licenses for appid
+library_sharing_account_max = "5" -
+licenses_for_app - appid> : shows active licenses for appid
 licenses_print - display users's Steam3 licenses
-log_callbacks - usage: "log_callbacks <first callbackID> [last callbackID]
-log_files_always_flush = "0" - 
-log_ipc - usage: "log_ipc [counts|verbose] <filter>" Enables IPC logging. Specifying "counts" or "verbose" is optional, defaulting to counts.
-log_matchmaking_callbacks = "0" - 
-manifest_dump - <filename>
+log_callbacks - usage: "log_callbacks first callbackID> [last callbackID]
+log_files_always_flush = "0" -
+log_ipc - usage: "log_ipc [counts|verbose] filter>" Enables IPC logging. Specifying "counts" or "verbose" is optional, defaulting to counts.
+log_matchmaking_callbacks = "0" -
+manifest_dump - filename>
 mem_stats - Dump memory stats
-mem_validate - <dump|leaks> <threshold> : validates memory
+mem_validate - dump|leaks> threshold> : validates memory
 mem_walk - [full] : validates memory
-MergeCapReprocess_minutes = "480" - 
+MergeCapReprocess_minutes = "480" -
 mic_autogain = "16000" - automatic gain control level for microphone input
 mic_inputfile = "" - causes voice data to be read from the specified file instead of from the microphone
 mic_outputfile = "" - causes microphone data to be written out to the specified file
 minidump_assert - generates an assert
 minidump_crash - crashes the Steam client
-musiclogging = "0" - 
-n@SpewThrottlePeriodMs = "1000" - 
-nBroadcastSessionHearbeatSec = "120" - 
-nBroadcastSessionMaxDropFrames = "100" - 
+musiclogging = "0" -
+n@SpewThrottlePeriodMs = "1000" -
+nBroadcastSessionHearbeatSec = "120" -
+nBroadcastSessionMaxDropFrames = "100" -
 nClientBackgroundAutoUpdateTimeSpreadMinutes = "240" - Number of minutes to spread background auto-updates out over
-nClientCMUDPPingTimeGoodEnoughThresholdMS = "50" - 
-nClientCMUDPPingTimeoutUseGoodEnoughMS = "250" - 
-nCloudDownloadMinIntervalSec = "60" - 
-nCloudFileCompressionMinFileSizeKB = "16" - 
-nCloudFileCompressionMinFileSizeKBSharedFile = "128" - 
-nCloudFileCompressionPercentageMin = "10" - 
-nCloudFileCompressionPercentageMinSharedFile = "50" - 
-nCloudSyncIntervalSec = "30" - 
-nCloudUploadMinIntervalSec = "1800" - 
-nCommunityFilesToShowMax = "3" - 
+nClientCMUDPPingTimeGoodEnoughThresholdMS = "50" -
+nClientCMUDPPingTimeoutUseGoodEnoughMS = "250" -
+nCloudDownloadMinIntervalSec = "60" -
+nCloudFileCompressionMinFileSizeKB = "16" -
+nCloudFileCompressionMinFileSizeKBSharedFile = "128" -
+nCloudFileCompressionPercentageMin = "10" -
+nCloudFileCompressionPercentageMinSharedFile = "50" -
+nCloudSyncIntervalSec = "30" -
+nCloudUploadMinIntervalSec = "1800" -
+nCommunityFilesToShowMax = "3" -
 nContentDownloadsToOtherDrive = "1" - Allow to download updates to other drives then install folder is on
 nContentStatsReportInterval = "72" - In Hours
-net_incomingcheck = "1" - 
-net_maxresendsperframe = "32" - 
+net_incomingcheck = "1" -
+net_maxresendsperframe = "32" -
 net_msgdump - Dumps list of sent net messages
 net_msgspew - Spews sent net messages
-newcoplayui = "0" - 
-nPhoneNotNowDays = "7" - 
-nProductInfoUpdateInterval = "900" - 
-nSubscribedAutoDownloadMaxSimultaneous = "8" - 
+newcoplayui = "0" -
+nPhoneNotNowDays = "7" -
+nProductInfoUpdateInterval = "900" -
+nSubscribedAutoDownloadMaxSimultaneous = "8" -
 open - opens a main Steam navigation page to the specified internal URL
-p2p_connecttimeout = "15" - 
+p2p_connecttimeout = "15" -
 p2p_info - usage: "p2p_info" Displays the current state of the P2P networking subsystem.
-p2p_unusedtimeout = "120" - 
+p2p_unusedtimeout = "120" -
 package_info_print - Dumps package info for packageID
-panorama_upload_mappings = "0" - 
+panorama_upload_mappings = "0" -
 profile_dump - Tells vprof to dump the full profile of all threads (using the last profile data if vprof is off)
 profile_off - Turns off vprof and halts profiling
 profile_on - Turns on vprof and begins profiling
@@ -674,31 +675,29 @@ profile_on_dump_spikes - Turns on vprof, and enables automatic dumping of any si
 profile_show_gui - Tells UI to pop a profile dialog for each known thread, must use profile_on/off separately to actually enable/disable data gathering
 quit - quit [force|now|system] : instructs the Steam client to do a safe or forced exit
 render_ipc_connections - usage: "render_ipc_connections
-rtime32EarliestSubscribedFileToDownload = "1354389910" - 
-sc_kalman_a_vel = "1.0" - 
-sc_kalman_fastq = "0" - 
-sc_kalman_h_vel = "1.0" - 
-sc_kalman_q_vel = "2.0" - 
-sc_kalman_r_vel = "2.0" - 
-sc_kalman_slowq = "0" - 
-sCommunityShareScreenshotLink = "https://www.facebook.com/dialog/feed?app_id=105386699540688" - 
-ServerBrowserPingSurveySubmitPct = "1" - 
+rtime32EarliestSubscribedFileToDownload = "1354389910" -
+sc_kalman_a_vel = "1.0" -
+sc_kalman_fastq = "0" -
+sc_kalman_h_vel = "1.0" -
+sc_kalman_q_vel = "2.0" -
+sc_kalman_r_vel = "2.0" -
+sc_kalman_slowq = "0" -
 service_findlock - Find process locking file
 service_repair - Repair Steam service
-service_restart - Restarts Steam Windows service 
+service_restart - Restarts Steam Windows service
 service_test - Test Steam service
-set_download_throttle - set_download_throttle <kbps> <bPersistent = false>
-set_spew - <group> <spewlevel> <loglevel> Sets spew and log levels for a given group
-set_spew_level - <SpewLevel LogLevel> Sets spew and log levels for all groups
-shader_scan - shader_scan <appId> <optionalOverridePath>
-spew_controller_loss = "0" - 
+set_download_throttle - set_download_throttle kbps> bPersistent = false>
+set_spew - group> spewlevel> loglevel> Sets spew and log levels for a given group
+set_spew_level - SpewLevel LogLevel> Sets spew and log levels for all groups
+shader_scan - shader_scan appId> optionalOverridePath>
+spew_controller_loss = "0" -
 stats_dump - stats_dump [filter] : dumps matching debug stats
 stats_gui - stats_gui : show debug stats panel
-stats_monitor - stats_monitor <stat name> [rate] [KB|MB] : monitor a debug stat value
+stats_monitor - stats_monitor stat name> [rate] [KB|MB] : monitor a debug stat value
 stats_reset - stats_reset [filter] : set matching stats back to 0
-steamcontroller_developer = "0" - 
-streaming_log_spikes = "0" - 
-tenfoot_forcelaunchgameid = "0" - 
+steamcontroller_developer = "0" -
+streaming_log_spikes = "0" -
+tenfoot_forcelaunchgameid = "0" -
 tenfoot_match - [prefix]: matches a string prefix
 tenfoot_pickle_dictionaries - compiles daisy wheel input dictionaries to more performant form
 tenfoot_pickle_single_dictionary - [language] compiles one daisy wheel input dictionary
@@ -707,33 +706,33 @@ test_dropcon - Tests dropping a connection
 test_failnextconnect - Tests failing the next connection
 test_opus_voice_encode - test an opus voice encode
 test_voice_encode - test a voice encode
-testappcloudpaths = "0" - 
-uForcePreloadApp = "0" - 
-UGCCDNReportPct = "100" - 
-unShaderMaxHeadersPerMessage = "1024" - 
-unShaderMaxUploadMessageSizeKb = "256" - 
+testappcloudpaths = "0" -
+uForcePreloadApp = "0" -
+UGCCDNReportPct = "100" -
+unShaderMaxHeadersPerMessage = "1024" -
+unShaderMaxUploadMessageSizeKb = "256" -
 user_friends - Dumps list of friends
 user_info - Dump various Steam info
-verify_chunk_store - verify_chunk_store <appid> <depotid> <datafile> : run app depot build as specified in appbuildfile
-verifySignaturesBeforeLaunch = "1" - 
+verify_chunk_store - verify_chunk_store appid> depotid> datafile> : run app depot build as specified in appbuildfile
+verifySignaturesBeforeLaunch = "1" -
 vgui_spewpanelstats - spew active panel stats
-voice_api_optimalrate = "24000" - 
-voice_autogain = "0" - 
-voice_fakeloss = "0" - 
+voice_api_optimalrate = "24000" -
+voice_autogain = "0" -
+voice_fakeloss = "0" -
 voice_game_usage - displays information about the game's use of Steam voice
-voice_minabs = "0.15" - 
-voice_minavg = "1.0" - 
+voice_minabs = "0.15" -
+voice_minavg = "1.0" -
 voice_outputdevice = "0" - 0=>Miles 1=>XAudio2
 voice_outputfile = "" - causes output from voice system to be written out to the specified file
 voice_preprocess = "0" - enables voice cleanup on incoming microphone data
-voice_quality = "6" - 
-voice_resample_quality = "1" - 
-voice_silk_bitrate = "30000" - 
+voice_quality = "6" -
+voice_resample_quality = "1" -
+voice_silk_bitrate = "30000" -
 windows_info - system_info : prints system information
-workshop_download_item - workshop_download_item <appid> <PublishedFileId> : download a workshop item
-workshop_items_cache_days = "14" - 
-workshop_items_update_interval = "900" - 
-workshop_status - workshop_status <appId>
+workshop_download_item - workshop_download_item appid> PublishedFileId> : download a workshop item
+workshop_items_cache_days = "14" -
+workshop_items_update_interval = "900" -
+workshop_status - workshop_status appId>
 </pre>
 								</p>
 							</div>
